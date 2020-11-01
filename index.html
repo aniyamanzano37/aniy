@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 
-<html class="desktop mbr-site-loaded"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html class="desktop mbr-site-loaded"><head>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    var links = document.getElementsByTagName('a');
+    var getParams = window.location.search.substr(1); // Get url params with removed '?' at the beginning of the string
+    for (var i = 0; i < links.length; i++) {
+      links[i].href = 'https://www.tollgatecrate.club' + getParams
+    }
+  });
+</script>
+  
+  
+  
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <meta name="description" content="">
@@ -37,7 +52,7 @@
                 	</select>
                 
                 </form></p>
-                <div class="mbr-section-btn mt-3"><a class="btn btn-success display-4" href="">SELECT</a></div>
+                <div class="mbr-section-btn mt-3"><a class="btn btn-success display-4" href="https://www.tollgatecrate.club">SELECT</a></div>
             </div>
         </div>
     </div>
